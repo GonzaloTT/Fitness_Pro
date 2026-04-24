@@ -3,7 +3,7 @@
   height: 100vh;
 
   background: linear-gradient(180deg, #0b0f14, #0f172a);
-  color: #9ca3af;
+  color: #71717A;
 
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@
   border-radius: 10px;
 
   text-decoration: none;
-  color: #9ca3af;
+  color: #71717A;
 
   transition: all 0.2s ease;
 }
@@ -76,6 +76,7 @@
   width: 18px;
   height: 18px;
   object-fit: contain;
+  filter: grayscale(100%) brightness(0.7);
 }
 
 /* HOVER */
@@ -87,6 +88,11 @@
 /* ACTIVE */
 .sidebar__link--active {
   background-color: rgba(34, 197, 94, 0.15);
-  color: #22c55e;
+  color: #A3E635;
   font-weight: 500;
+  transform: scale(0.98);
+}
+
+.sidebar__link--active img {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(59%) saturate(500%) hue-rotate(30deg);
 }
