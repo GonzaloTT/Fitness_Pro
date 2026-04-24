@@ -1,0 +1,21 @@
+.layout {
+  display: flex;
+  height: 100vh;
+  background-color: #0b0f14;
+}
+
+/* MAIN AREA (derecha) */
+.layout__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONTENIDO */
+.layout__content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+
+  background-color: #0f172a; /* fondo principal */
+}
