@@ -1,0 +1,57 @@
+.streak-card {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  min-height: 220px;
+}
+
+/* HEADER */
+.streak-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.streak-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.streak-card__icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* BODY */
+.streak-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.streak-card__days {
+  font-size: 48px;
+  font-weight: 700;
+  color: #A3E635;
+  line-height: 1;
+}
+
+.streak-card__label {
+  font-size: 14px;
+  color: #71717A;
+}
+
+/* FOOTER */
+.streak-card__message {
+  font-size: 14px;
+  color: #A1A1AA;
+  line-height: 1.5;
+}

@@ -1,0 +1,45 @@
+.motivation-card {
+  background: linear-gradient(135deg, #18181B, #27272A);
+  border: 1px solid #27272A;
+  border-radius: 16px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  min-height: 220px;
+}
+
+/* HEADER */
+.motivation-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.motivation-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.motivation-card__icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* QUOTE */
+.motivation-card__quote {
+  font-size: 18px;
+  line-height: 1.6;
+  font-style: italic;
+  color: #E4E4E7;
+}
+
+/* FOOTER */
+.motivation-card__footer {
+  font-size: 13px;
+  color: #71717A;
+}

@@ -1,0 +1,87 @@
+.session-card {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  min-height: 220px;
+}
+
+/* HEADER */
+.session-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.session-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.session-card__icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* CONTENT */
+.session-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.session-card__routine {
+  font-size: 22px;
+  font-weight: 700;
+  color: #A3E635;
+}
+
+.session-card__exercise {
+  font-size: 14px;
+  color: #A1A1AA;
+}
+
+.session-card__exercise span {
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.session-card__progress {
+  font-size: 13px;
+  color: #71717A;
+}
+
+/* BUTTON */
+.session-card__button {
+  margin-top: auto;
+
+  background-color: transparent;
+  color: #A3E635;
+
+  border: 1px solid #A3E635;
+  border-radius: 10px;
+
+  padding: 12px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.session-card__button:hover {
+  background-color: rgba(163, 230, 53, 0.1);
+}
+
+/* EMPTY STATE */
+.session-card__empty {
+  color: #71717A;
+  font-size: 14px;
+}
