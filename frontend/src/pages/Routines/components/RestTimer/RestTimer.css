@@ -1,0 +1,66 @@
+.rest-timer {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* HEADER */
+.rest-timer__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* TIMER DISPLAY */
+.rest-timer__display {
+  font-size: 42px;
+  font-weight: 700;
+  color: #A3E635;
+
+  text-align: center;
+}
+
+/* CONTROLS */
+.rest-timer__controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.rest-timer__button {
+  flex: 1;
+
+  background-color: #A3E635;
+  color: #09090B;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 12px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.rest-timer__button:hover {
+  background-color: #bef264;
+}
+
+/* SECONDARY */
+.rest-timer__button--secondary {
+  background-color: #27272A;
+  color: #FFFFFF;
+}
+
+.rest-timer__button--secondary:hover {
+  background-color: #3F3F46;
+}

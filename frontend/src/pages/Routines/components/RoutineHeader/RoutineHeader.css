@@ -1,0 +1,131 @@
+.routine-header {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+
+  padding: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+/* INFO */
+.routine-header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.routine-header__day {
+  font-size: 14px;
+  color: #71717A;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.routine-header__name {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.routine-header__focus {
+  font-size: 15px;
+  color: #A1A1AA;
+}
+
+.routine-header__stats {
+  display: flex;
+  gap: 20px;
+
+  font-size: 14px;
+  color: #71717A;
+}
+
+/* BUTTON */
+.routine-header__button {
+  background-color: #A3E635;
+  color: #09090B;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 14px 24px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.routine-header__button:hover:not(:disabled) {
+  background-color: #bef264;
+}
+
+.routine-header__button:disabled {
+  cursor: not-allowed;
+}
+
+.routine-header__button--completed {
+  background-color: #27272A;
+  color: #71717A;
+}
+
+.routine-header__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* CAMERA BUTTON */
+.routine-header__camera-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background-color: #C3F400;
+  color: #09090B;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 14px 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.routine-header__camera-button img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.routine-header__camera-button:hover {
+  filter: brightness(1.05);
+}
+
+.routine-header__stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #71717A;
+}
+
+.routine-header__stat img.kcal-icon {
+  filter: brightness(0) saturate(100%) invert(88%) sepia(14%) saturate(191%) hue-rotate(31deg) brightness(93%) contrast(89%);
+}
+
+.routine-header__stat img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}

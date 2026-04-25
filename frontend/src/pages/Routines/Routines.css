@@ -1,0 +1,22 @@
+.routines {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+}
+
+/* MIDDLE GRID */
+.routines__middle-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .routines__middle-grid {
+    grid-template-columns: 1fr;
+  }
+}

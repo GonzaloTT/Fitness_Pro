@@ -7,7 +7,7 @@ export default function StreakCard() {
   return (
     <div className="streak-card">
       <div className="streak-card__header">
-        <h2 className="streak-card__title">Current Streak</h2>
+        <h2 className="streak-card__title">Racha actual</h2>
         <img src={streakIcon} alt="Streak Icon" className="streak-card__icon" />
       </div>
 

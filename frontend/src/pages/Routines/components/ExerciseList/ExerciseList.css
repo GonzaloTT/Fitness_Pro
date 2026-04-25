@@ -1,0 +1,73 @@
+.exercise-list {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* TITLE */
+.exercise-list__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* ITEMS */
+.exercise-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ITEM */
+.exercise-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 16px;
+  border-radius: 12px;
+
+  background-color: #27272A;
+  border: 1px solid transparent;
+
+  transition: all 0.2s ease;
+}
+
+/* NAME */
+.exercise-list__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+/* STATUS */
+.exercise-list__status {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #71717A;
+}
+
+/* ACTIVE */
+.exercise-list__item--active {
+  border-color: #A3E635;
+  background-color: rgba(163, 230, 53, 0.08);
+}
+
+.exercise-list__item--active .exercise-list__status {
+  color: #A3E635;
+}
+
+/* COMPLETED */
+.exercise-list__item--completed {
+  opacity: 0.7;
+}
+
+.exercise-list__item--completed .exercise-list__status {
+  color: #22C55E;
+}
