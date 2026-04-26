@@ -1,0 +1,33 @@
+.reps-counter {
+  background: rgba(24, 24, 27, 0.92);
+  border-left: 3px solid #C3F400;
+
+  padding: 16px 20px;
+  min-width: 220px;
+}
+
+.reps-counter__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #C3F400;
+  letter-spacing: 1px;
+}
+
+.reps-counter__numbers {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.reps-counter__current {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  color: #C3F400;
+}
+
+.reps-counter__total {
+  font-size: 28px;
+  color: #52525B;
+  padding-bottom: 10px;
+}

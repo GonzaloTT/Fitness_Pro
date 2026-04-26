@@ -1,0 +1,44 @@
+.form-feedback {
+  flex: 1;
+
+  display: flex;
+  gap: 14px;
+
+  background: rgba(24, 24, 27, 0.92);
+  border-left: 3px solid #C3F400;
+
+  padding: 16px 18px;
+}
+
+.form-feedback__icon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+  background-color: rgba(195, 244, 0, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+}
+
+.form-feedback__label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #C3F400;
+  letter-spacing: 1px;
+}
+
+.form-feedback__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.form-feedback__text {
+  font-size: 14px;
+  color: #A1A1AA;
+  line-height: 1.5;
+}

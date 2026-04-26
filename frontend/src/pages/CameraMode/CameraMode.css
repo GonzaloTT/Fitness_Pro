@@ -1,0 +1,13 @@
+.camera-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 100%;
+}
+
+.camera-mode__bottom-row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
