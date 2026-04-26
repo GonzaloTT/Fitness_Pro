@@ -1,0 +1,19 @@
+.stats-chart {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+}
+
+.stats-chart h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+}

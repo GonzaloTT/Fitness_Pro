@@ -1,0 +1,28 @@
+.ai-insight {
+  background: linear-gradient(
+    135deg,
+    rgba(195, 244, 0, 0.08),
+    rgba(24, 24, 27, 1)
+  );
+
+  border: 1px solid rgba(195, 244, 0, 0.18);
+  border-radius: 16px;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ai-insight h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #C3F400;
+}
+
+.ai-insight p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #E4E4E7;
+}

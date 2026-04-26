@@ -1,0 +1,31 @@
+.stats-toggle {
+  display: flex;
+  gap: 12px;
+}
+
+.stats-toggle__button {
+  background-color: #18181B;
+  color: #71717A;
+
+  border: 1px solid #27272A;
+  border-radius: 10px;
+
+  padding: 12px 20px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.stats-toggle__button:hover {
+  border-color: #3F3F46;
+  color: #FFFFFF;
+}
+
+.stats-toggle__button--active {
+  background-color: #C3F400;
+  color: #09090B;
+  border-color: #C3F400;
+}
