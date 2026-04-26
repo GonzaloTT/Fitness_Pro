@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Statistics.css";
 
 import MainLayout from "../../components/layout/MainLayout/MainLayout";
@@ -9,14 +10,16 @@ import WeightProgressChart from "./components/WeightProgressChart/WeightProgress
 import AIInsightCard from "./components/AIInsightCard/AIInsightCard";
 
 export default function Statistics() {
+  const [period, setPeriod] = useState("weekly");
+
   return (
     <MainLayout>
       <section className="statistics">
         <StatsHeader />
-        <StatsPeriodToggle />
-        <TrainingFrequencyChart />
-        <WeightProgressChart />
-        <AIInsightCard />
+        <StatsPeriodToggle period={period} setPeriod={setPeriod}/>
+        <TrainingFrequencyChart period={period}/>
+        <WeightProgressChart period={period}/>
+        <AIInsightCard period={period}/>
       </section>
     </MainLayout>
   );

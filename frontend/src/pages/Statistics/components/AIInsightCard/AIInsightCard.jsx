@@ -1,13 +1,14 @@
 import "./AIInsightCard.css";
 
-export default function AIInsightCard() {
+export default function AIInsightCard({ period }) {
   return (
     <section className="ai-insight">
       <h2>AI Insight</h2>
 
       <p>
-        Based on your recent progress, your training consistency has improved
-        by 18% this month. Keep maintaining your current streak.
+        {period === "weekly"
+          ? "Your weekly consistency improved by 12%."
+          : "Your monthly performance trend is positive with sustained progress."}
       </p>
     </section>
   );
