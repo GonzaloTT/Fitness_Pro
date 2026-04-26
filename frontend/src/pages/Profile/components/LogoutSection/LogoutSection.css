@@ -1,0 +1,37 @@
+.logout-section {
+    display: flex;
+    justify-content: center;
+}
+
+.logout-section__button {
+  width: 220px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: transparent;
+  border: 1px solid #EF4444;
+  border-radius: 14px;
+
+  padding: 16px;
+
+  color: #EF4444;
+  font-weight: 600;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-section__button:hover {
+  background-color: rgba(239, 68, 68, 0.08);
+}
+
+.logout-section__icon {
+  width: 18px;
+  height: 18px;
+
+  object-fit: contain;
+}

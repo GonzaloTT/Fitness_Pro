@@ -3,6 +3,7 @@ import Dashboard from "../../pages/Dashboard/Dashboard";
 import Routines from "../../pages/Routines/Routines";
 import CameraMode from "../../pages/CameraMode/CameraMode"
 import Statistics from "../../pages/Statistics/Statistics"
+import Profile from "../../pages/Profile/Profile"
 
 export default function AppRouter() {
   return (
@@ -12,6 +13,7 @@ export default function AppRouter() {
         <Route path="/rutinas" element={<Routines />} />
         <Route path="/camara" element={<CameraMode />} />
         <Route path="/estadisticas" element={<Statistics />} />
+        <Route path="/perfil" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

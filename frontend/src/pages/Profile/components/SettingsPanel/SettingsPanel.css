@@ -1,0 +1,50 @@
+.settings-panel {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+
+  padding: 24px;
+}
+
+.settings-panel h2 {
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.settings-panel__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settings-option {
+  background-color: #27272A;
+  border: none;
+  border-radius: 12px;
+
+  padding: 14px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.settings-option:hover {
+  background-color: #3F3F46;
+}
+
+.settings-option__icon {
+  width: 18px;
+  height: 18px;
+
+  object-fit: contain;
+}
