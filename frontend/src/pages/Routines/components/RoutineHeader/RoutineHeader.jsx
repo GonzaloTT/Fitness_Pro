@@ -2,8 +2,11 @@ import "./RoutineHeader.css";
 import clockIcon from "../../../../assets/icons/clock.png";
 import kcalIcon from "../../../../assets/icons/streak.png";
 import videoIcon from "../../../../assets/icons/video.png";
+import { useNavigate } from "react-router-dom";
 
 export default function RoutineHeader() {
+  const navigate = useNavigate();
+
   const routine = {
     day: "Monday",
     name: "Push Day",
@@ -50,7 +53,7 @@ export default function RoutineHeader() {
       </div>
 
     <div className="routine-header__actions">
-      <button className="routine-header__camera-button">
+      <button className="routine-header__camera-button" onClick={() => navigate("/camara")}>
         <img src={videoIcon} alt="Camera Mode" />
         Iniciar modo cámara
       </button>
