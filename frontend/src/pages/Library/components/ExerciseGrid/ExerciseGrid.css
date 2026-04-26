@@ -1,0 +1,37 @@
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(280px, 1fr)
+  );
+  gap: 20px;
+}
+
+.exercise-card {
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.exercise-card__category {
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #C3F400;
+}
+
+.exercise-card h3 {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.exercise-card p {
+  color: #A1A1AA;
+  line-height: 1.5;
+}

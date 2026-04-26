@@ -1,0 +1,27 @@
+.library-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background-color: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 14px;
+
+  padding: 14px 18px;
+}
+
+.library-search__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.library-search input {
+  flex: 1;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: #FFFFFF;
+  font-size: 14px;
+}
