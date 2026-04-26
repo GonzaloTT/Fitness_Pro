@@ -11,7 +11,7 @@ export const sidebarLinks = [
   { name: "Dashboard", path: "/", icon: dashboardIcon },
   { name: "Rutinas", path: "/rutinas", icon: rutinasIcon },
   { name: "Cámara", path: "/camara", icon: cameraIcon },
-  { name: "Estadísticas", path: "/progreso", icon: statsIcon },
+  { name: "Estadísticas", path: "/estadisticas", icon: statsIcon },
   { name: "Tienda", path: "/tienda", icon: storeIcon },
   { name: "Perfil", path: "/perfil", icon: profileIcon },
   { name: "Biblioteca", path: "/biblioteca", icon: libraryIcon },
