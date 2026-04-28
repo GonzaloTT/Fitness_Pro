@@ -1,33 +1,81 @@
 .reps-counter {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
   background: rgba(24, 24, 27, 0.92);
-  border-left: 3px solid #C3F400;
-
-  padding: 16px 20px;
-  min-width: 220px;
+  border-radius: 16px;
+  border: 1px solid #27272A;
 }
 
 .reps-counter__label {
   font-size: 11px;
   font-weight: 700;
-  color: #C3F400;
+  color: #71717A;
   letter-spacing: 1px;
 }
 
 .reps-counter__numbers {
   display: flex;
-  align-items: flex-end;
-  gap: 4px;
+  align-items: baseline;
+  gap: 6px;
 }
 
 .reps-counter__current {
-  font-size: 72px;
+  font-size: 52px;
   font-weight: 800;
+  color: #A3E635;
   line-height: 1;
-  color: #C3F400;
 }
 
 .reps-counter__total {
-  font-size: 28px;
+  font-size: 16px;
   color: #52525B;
-  padding-bottom: 10px;
+}
+
+/* Desglose por brazo */
+.reps-counter__arms {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.reps-counter__arm {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reps-counter__arm-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #52525B;
+  letter-spacing: 1px;
+}
+
+.reps-counter__arm-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #D4D4D8;
+}
+
+.reps-counter__divider {
+  width: 1px;
+  height: 32px;
+  background: #27272A;
+}
+
+/* FPS y temperatura */
+.reps-counter__meta {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.reps-counter__meta span {
+  font-size: 11px;
+  color: #3F3F46;
+  font-variant-numeric: tabular-nums;
 }
