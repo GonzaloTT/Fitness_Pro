@@ -3,7 +3,7 @@ import "./CameraFeed.css";
 import CameraControls from "../CameraControls/CameraControls";
 import { STREAM_URL } from "../../../../hooks/useRaspberry";
 
-export default function CameraFeed({ connected }) {
+export default function CameraFeed({ connected, sendCommand, paused }) {
   const [imgError, setImgError] = useState(false);
 
   return (
@@ -24,7 +24,7 @@ export default function CameraFeed({ connected }) {
         )}
       </div>
       <div className="camera-feed__controls-overlay">
-        <CameraControls />
+        <CameraControls sendCommand={sendCommand} paused={paused} />
       </div>
     </section>
   );

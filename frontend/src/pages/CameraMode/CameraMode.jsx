@@ -22,7 +22,7 @@ export default function CameraMode() {
         </div>
 
         <div className="camera-mode__feed">
-          <CameraFeed connected={connected} />
+          <CameraFeed connected={connected} sendCommand={sendCommand} paused={stats?.paused} />
         </div>
 
         <div className="camera-mode__bottom-row">
