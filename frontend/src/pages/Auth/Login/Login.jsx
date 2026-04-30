@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
-import { useAuth } from "../../contexts/AuthContext";
+import { useAuth } from "../../../contexts/AuthContext";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -66,6 +67,12 @@ export default function Login() {
         <button type="submit">
           Iniciar Sesión
         </button>
+        <Link
+          to="/register"
+          className="login__link"
+        >
+          ¿No tienes cuenta? Regístrate
+        </Link>
       </form>
     </main>
   );

@@ -6,7 +6,8 @@ import CameraMode from "../../pages/CameraMode/CameraMode";
 import Statistics from "../../pages/Statistics/Statistics";
 import Profile from "../../pages/Profile/Profile";
 import Library from "../../pages/Library/Library";
-import Login from "../../pages/Auth/Login";
+import Login from "../../pages/Auth/Login/Login";
+import Register from "../../pages/Auth/Register/Register";
 
 import ProtectedRoute from "../../routes/ProtectedRoute";
 
@@ -17,6 +18,7 @@ export default function AppRouter() {
 
         {/* PUBLIC */}
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
         {/* PROTECTED GROUP */}
         <Route element={<ProtectedRoute />}>
