@@ -1,9 +1,5 @@
-import { useState } from 'react'
+import AppRouter from "./app/router/AppRouter";
 
-function App() {
-return (
-    <h1>Fitness Pro</h1>
-  );
+export default function App() {
+  return <AppRouter />;
 }
-
-export default App
