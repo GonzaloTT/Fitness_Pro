@@ -1,0 +1,52 @@
+.monthly-calendar {
+  background: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.monthly-calendar__header,
+.monthly-calendar__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+  color: #71717A;
+  font-size: 14px;
+}
+
+.monthly-calendar__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.monthly-calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.calendar-day {
+  aspect-ratio: 1/1;
+  border-radius: 12px;
+  background: #111113;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #A1A1AA;
+  font-weight: 600;
+}
+
+.calendar-day--trained {
+  border-color: #C3F400;
+  color: #C3F400;
+}
+
+.calendar-day--today {
+  background: #C3F400;
+  color: #09090B;
+  font-weight: 800;
+}

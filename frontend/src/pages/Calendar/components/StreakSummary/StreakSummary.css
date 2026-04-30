@@ -1,0 +1,44 @@
+.streak-summary {
+  background: linear-gradient(
+    90deg,
+    #18181B 0%,
+    rgba(195,244,0,0.15) 100%
+  );
+
+  border: 1px solid #27272A;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.streak-summary__label {
+  font-size: 12px;
+  color: #71717A;
+  font-weight: 700;
+}
+
+.streak-summary__value {
+  font-size: 42px;
+  color: #FFFFFF;
+  margin: 12px 0;
+}
+
+.streak-summary__value span {
+  color: #C3F400;
+  font-size: 28px;
+}
+
+.streak-summary__message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #A1A1AA;
+  font-size: 14px;
+}
+
+.streak-summary__icon {
+  width: 18px;
+  height: 18px;
+
+  object-fit: contain;
+}

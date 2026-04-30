@@ -1,0 +1,49 @@
+.consistency-card {
+  background: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.consistency-card h3 {
+  font-size: 12px;
+  color: #71717A;
+  margin-bottom: 20px;
+}
+
+.consistency-card__circle {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+  border: 10px solid #C3F400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.consistency-card__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.consistency-card__stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.consistency-card__stats strong {
+  color: #FFFFFF;
+}
+
+.consistency-card__stats span {
+  color: #71717A;
+  font-size: 14px;
+}

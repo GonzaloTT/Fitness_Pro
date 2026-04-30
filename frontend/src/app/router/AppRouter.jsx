@@ -6,6 +6,7 @@ import CameraMode from "../../pages/CameraMode/CameraMode";
 import Statistics from "../../pages/Statistics/Statistics";
 import Profile from "../../pages/Profile/Profile";
 import Library from "../../pages/Library/Library";
+import Calendar from "../../pages/Calendar/Calendar";
 import Login from "../../pages/Auth/Login/Login";
 import Register from "../../pages/Auth/Register/Register";
 
@@ -31,6 +32,7 @@ export default function AppRouter() {
           <Route path="/estadisticas" element={<Statistics />} />
           <Route path="/perfil" element={<Profile />} />
           <Route path="/biblioteca" element={<Library />} />
+          <Route path="/calendario" element={<Calendar />} />
         </Route>
 
       </Routes>

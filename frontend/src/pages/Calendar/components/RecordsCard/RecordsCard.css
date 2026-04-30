@@ -1,0 +1,46 @@
+.records-card {
+  background: #18181B;
+  border: 1px solid #27272A;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.records-card h3 {
+  font-size: 12px;
+  color: #71717A;
+  margin-bottom: 20px;
+}
+
+.records-card__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 0;
+  border-top: 1px solid #27272A;
+}
+
+.records-card__item span {
+  color: #A1A1AA;
+}
+
+.records-card__item strong {
+  color: #FFFFFF;
+}
+
+.records-card__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.records-card__icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+
+  filter: brightness(0) saturate(100%)
+    invert(84%) sepia(74%) saturate(680%)
+    hue-rotate(24deg) brightness(108%)
+    contrast(101%);
+}

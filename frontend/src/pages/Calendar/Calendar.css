@@ -1,0 +1,18 @@
+.calendar-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.calendar-page__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.calendar-page__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
