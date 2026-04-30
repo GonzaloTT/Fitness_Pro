@@ -10,6 +10,7 @@ import Login from "../../pages/Auth/Login/Login";
 import Register from "../../pages/Auth/Register/Register";
 
 import ProtectedRoute from "../../routes/ProtectedRoute";
+import PublicRoute from "../../routes/PublicRoute";
 
 export default function AppRouter() {
   return (
@@ -17,8 +18,10 @@ export default function AppRouter() {
       <Routes>
 
         {/* PUBLIC */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route element={<PublicRoute />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Route>
 
         {/* PROTECTED GROUP */}
         <Route element={<ProtectedRoute />}>
