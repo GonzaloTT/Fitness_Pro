@@ -16,3 +16,9 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.calendar-day--empty {
+  background: transparent;
+  border: none;
+  pointer-events: none;
+}
