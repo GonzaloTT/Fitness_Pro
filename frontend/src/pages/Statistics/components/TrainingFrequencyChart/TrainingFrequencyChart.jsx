@@ -10,62 +10,99 @@ import {
   CartesianGrid
 } from "recharts";
 
-export default function TrainingFrequencyChart({ period }) {
-  const weeklyData = [
-    { label: "Mon", value: 1 },
-    { label: "Tue", value: 0 },
-    { label: "Wed", value: 1 },
-    { label: "Thu", value: 1 },
-    { label: "Fri", value: 0 },
-    { label: "Sat", value: 1 },
-    { label: "Sun", value: 1 }
-  ];
+export default function TrainingFrequencyChart({
+  period,
+  data
+}) {
+  const now = new Date();
 
-  const monthlyData = [
-    { label: "W1", value: 4 },
-    { label: "W2", value: 5 },
-    { label: "W3", value: 3 },
-    { label: "W4", value: 6 }
-  ];
-
-  const data =
+  const formattedData =
     period === "weekly"
-      ? weeklyData
-      : monthlyData;
+      ? data
+          .filter(entry => {
+            const date = new Date(entry.date);
+
+            const diffDays =
+              (now - date) / (1000 * 60 * 60 * 24);
+
+            return diffDays <= 7;
+          })
+          .map(entry => ({
+            label: new Date(entry.date)
+              .toLocaleDateString("es-MX", {
+                weekday: "short"
+              }),
+            value: entry.trained ? 1 : 0
+          }))
+
+      : data
+          .reduce((weeks, entry) => {
+            const date = new Date(entry.date);
+
+            const week =
+              Math.ceil(date.getDate() / 7);
+
+            const existingWeek =
+              weeks.find(
+                w => w.label === `W${week}`
+              );
+
+            if (existingWeek) {
+              existingWeek.value += 1;
+            } else {
+              weeks.push({
+                label: `W${week}`,
+                value: 1
+              });
+            }
+
+            return weeks;
+          }, []);
 
   return (
     <section className="stats-chart">
       <h2>Training Frequency</h2>
 
       <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={data}
-        margin={{
-      top: 10,
-      right: 20,
-      left: -10,
-      bottom: 0
-      }}
+        <LineChart
+          data={formattedData}
+          margin={{
+            top: 10,
+            right: 20,
+            left: -10,
+            bottom: 0
+          }}
         >
           <CartesianGrid
-      stroke="#27272A"
-      vertical={false}
-    />
-          <XAxis dataKey="label" stroke="#71717A" />
-          <YAxis stroke="#71717A" />
-          <Tooltip 
-            contentStyle={{
-            backgroundColor: "#18181B",
-            border: "1px solid #27272A",
-            borderRadius: "12px"
-          }}
+            stroke="#27272A"
+            vertical={false}
           />
+
+          <XAxis
+            dataKey="label"
+            stroke="#71717A"
+          />
+
+          <YAxis stroke="#71717A" />
+
+          <Tooltip
+            contentStyle={{
+              backgroundColor: "#18181B",
+              border: "1px solid #27272A",
+              borderRadius: "12px"
+            }}
+          />
+
           <Line
             type="monotone"
             dataKey="value"
             stroke="#C3F400"
             strokeWidth={3}
             dot={{ fill: "#C3F400", r: 6 }}
-            activeDot={{ r: 8, fill: "#C3F400" }}
+            activeDot={{
+              r: 8,
+              fill: "#C3F400"
+            }}
           />
         </LineChart>
       </ResponsiveContainer>
